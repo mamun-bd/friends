@@ -103,7 +103,7 @@ extension SPProfileViewController: UITableViewDelegate {
 extension SPProfileViewController: MFMailComposeViewControllerDelegate {
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        self.dismiss(animated: true) { [weak self] in
+        controller.dismiss(animated: true) { [weak self] in
             self?.setNeedsStatusBarAppearanceUpdate()
         }
     }

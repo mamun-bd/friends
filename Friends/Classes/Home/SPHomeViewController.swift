@@ -26,6 +26,8 @@ class SPHomeViewController: SPViewController {
                 self?.userContainer.addUserInformation(items: users)
             }
         }
+        
+        
     }
     
     /// Update display information for orientation change.
